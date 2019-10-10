@@ -1,17 +1,15 @@
 
+export const ADD_FEATURE = "ADD_FEATURE";
 
-export const REMOVE_FEATURE = 'REMOVE_FEATURE'
-
- export const removeFeature = item => {
-    return {type: REMOVE_FEATURE, payload: item}
-  };
-
+export const addFeature = feature => {
+    console.log("Add Feature");
+    return { type: ADD_FEATURE, payload: feature };
+};
 
 
-export const BUY_ITEM = 'BUY_ITEM'
+export const REMOVE_FEATURE = "REMOVE_FEATURE";
 
- export const buyItem = item => {
-     console.log(item)
-      return {type:BUY_ITEM, payload: item}
-    // dipsatch an action here to add an item
-  };
+export const removeItem = feature => {
+    console.log("Remove Feature");
+    return { type: REMOVE_FEATURE, payload: feature };
+};
